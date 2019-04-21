@@ -16,6 +16,7 @@ Special Interest Group of HIVE (`SIGHIVE`)是HIVE实验室的特别兴趣小组�
 | 时间  | 分享内容  | 分享人 | 链接 |
 |---|---|---|---|
 | 2019.4.21  |  The Graphics Processing Unit | [voidwalker](https://github.com/xuechao-chen) |  [Blog](Blog/03%20The%20Graphics%20Processing%20Unit.md)  |
+| 2019.4.21  |  The Graphics Rendering Pipeline | [Nyyyyyy](https://github.com/Nyyyyyy) |  [Blog](Blog/02%20The%20Graphics%20Rendering%20Pipeline.md)  |
 
 ## 规则约定
 - 互相学习，共同进步，积极分享
