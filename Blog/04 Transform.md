@@ -1,8 +1,4 @@
----
-typora-copy-images-to: typora图集
----
-
-# Realtime-rendering变换
+# 变换
 
 [TOC]
 
