@@ -17,6 +17,8 @@ Special Interest Group of HIVE (`SIGHIVE`)是HIVE实验室的特别兴趣小组�
 
 | 时间  | 分享内容  | 分享人 | 链接 |
 |---|---|---|---|
-| 2019.4.21  |  The Graphics Processing Unit | [voidwalker](https://github.com/xuechao-chen)，[ikutoo](https://github.com/ikutoo) |  [Blog](Blog/03%20The%20Graphics%20Processing%20Unit.md)  |
+| 2019.4.21  |  The Graphics Processing Unit | [voidwalker](https://github.com/xuechao-chen), [ikutoo](https://github.com/ikutoo) |  [Blog](Blog/03%20The%20Graphics%20Processing%20Unit.md)  |
 | 2019.4.21  |  The Graphics Rendering Pipeline | [Nyyyyyy](https://github.com/Nyyyyyy) |  [Blog](Blog/02%20The%20Graphics%20Rendering%20Pipeline.md)  |
 | 2019.4.28 | Transforms | [cr-tg](https://github.com/cr-tg) | [Blog](Blog/04%20Transform.md) |
+| 2019.5.19 | Shading Basics | [voidwalker](https://github.com/xuechao-chen) | [Blog](Blog/05%20Shading%20Basics.md) |
+| 2019.5.19 | TOG13' Global Illumination with Radiance Regression Functions  | [voidwalker](https://github.com/xuechao-chen) | [Blog](Blog/Notes%20on%20Global%20Illumination%20with%20Radiance%20Regression%20Functions.md), [Paper](https://dl.acm.org/citation.cfm?id=2462009) |
