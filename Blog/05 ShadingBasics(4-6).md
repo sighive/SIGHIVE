@@ -6,7 +6,7 @@
 
 ## 走样
 
-| ![anti_aliasing_rasterization](F:\Projects\Relevant\SIGHIVE\Blog\Pictures\anti_aliasing_rasterization.png)![anti_aliasing_rasterization_filled](F:\Projects\Relevant\SIGHIVE\Blog\Pictures\anti_aliasing_rasterization_filled.png) |
+| ![anti_aliasing_rasterization](./Pictures/anti_aliasing_rasterization.png)![anti_aliasing_rasterization_filled](./Pictures/anti_aliasing_rasterization_filled.png) |
 | :----------------------------------------------------------: |
 |                     图1：光栅化后的走样                      |
 
@@ -18,7 +18,7 @@
 
 抗锯齿的一般策略是对屏幕使用一个采样模式，然后对样本进行加权和，生成像素颜色p
 
-| ![1556417264105](F:\Projects\Relevant\SIGHIVE\Blog\Pictures\1556417264105.png) |
+| ![1556417264105](./Pictures/1556417264105.png) |
 | :----------------------------------------------------------: |
 |                      图2：颜色计算公式                       |
 
@@ -32,7 +32,7 @@ SSAA的主要优点是简单，这也是在数学上最完美的抗锯齿方法�
 
 ### 多重采样抗锯齿(Multisample Anti-aliasing, MSAA)
 
-| ![1556417127822](F:\Projects\Relevant\SIGHIVE\Blog\Pictures\1556417127822.png) |
+| ![1556417127822](./Pictures/1556417127822.png) |
 | :----------------------------------------------------------: |
 |                   图3：多重采样抗锯齿方案                    |
 
@@ -50,7 +50,7 @@ MSAA比SSAA方案更快，因为每计算一个最终像素颜色只运行一次
 
 高分辨率抗锯齿方法(High Resolution Anti-Aliasing，简称HRAA)，也称Quincunx方法，也出自NVIDIA公司。“Quincunx”意思是5个物体的排列方式，其中4个在正方形角上，第五个在正方形中心，也就是梅花形，很像六边模型上的五点图案模式。此方法中，采样模式是五点梅花状，其中四个样本在像素单元的角上，各占1/8权重，最后一个在中心，占1/2权重。
 
-| ![20190506172641](F:\Projects\Relevant\SIGHIVE\Blog\Pictures\20190506172641.png) |
+| ![20190506172641](./Pictures/20190506172641.png) |
 | :----------------------------------------------------------: |
 |                    图4：Quincunx采样模式                     |
 
@@ -116,7 +116,7 @@ Z-buffer的限制是每像素只存储一个对象。如果一些透明对象与
 
 深度剥离是一种对深度值进行排序的技术。它的原理比较直观，标准的深度检测使场景中的Z值最小的点输出到屏幕上，就是离我们最近的顶点。但还有离我们第二近的顶点，第三近的顶点存在。要想显示它们，可以用多遍渲染的方法。第一遍渲染时，按照正常方式处理，这样就得到了离我们最近的表面中的每个顶点的z值。在第二遍渲染时，把现在每个顶点的深度值和刚才的那个深度值进行比较，凡是小于等于第一遍得到的z值，把它们剥离，后面的过程依次类推即可。
 
-| ![](F:\Projects\Relevant\SIGHIVE\Blog\Pictures\20190506175906.png) |
+| ![](./Pictures/20190506175906.png) |
 | :----------------------------------------------------------: |
 | 图5：每个深度剥离通道渲染特定的一层透明通道。左侧是第一个Pass，直接显示眼睛可见的层，中间显示了第二层，显示了每个像素处第二靠近透明表面的像素。右边的图是第三层，显示处第三靠近透明表面的像素 |
 
@@ -130,7 +130,7 @@ Z-buffer的限制是每像素只存储一个对象。如果一些透明对象与
 
 当Gamma 值为 1时，对应一个“理想”监视器，这个监视器具有从完美的白色通过灰色到黑色的连续线性渐变效果。然而，理想的显示设备是不存在的。电脑监视器是“非线性”的设备。gamma 值越高，非线性程度越大。NTSC 视频的标准 gamma 值为 2.2。对于电脑监视器，gamma 值一般在 1.5 到 2.0 之间。
 
-| ![gamma_correction_gamma_curves](F:\Projects\Relevant\SIGHIVE\Blog\Pictures\gamma_correction_gamma_curves.png) |
+| ![gamma_correction_gamma_curves](./Pictures/gamma_correction_gamma_curves.png) |
 | ------------------------------------------------------------ |
 | 图4：灰色点线为Gamma为1的理想状态，红色实线代表监视器显示Gamma为2.2 |
 
